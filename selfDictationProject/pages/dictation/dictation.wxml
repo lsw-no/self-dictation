@@ -1,0 +1,51 @@
+<view wx:if="{{isDictationing}}" class="dictation-list">
+  <scroll-view scroll-y class="container">
+    <view class="dictation-item" wx:for="{{wordlist}}" wx:for-index="index" wx:for-item="word">
+      <view class="index">
+        <text>{{index+1}}</text>
+      </view>
+      <view class="interpretation">
+        <text>{{word.interpretation}}</text>
+      </view>
+      <view class="voice">
+        <image data-word="{{word.word}}" bindtap="playAudio" src="../../images/voice.png" />
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class="btn">
+    <view class="blockBtn cancelBtn" bindtap="cancelDictation">
+      <text>放弃听写</text>
+    </view>
+    <view class="blockBtn endBtn" bindtap="endDication">
+      <text>结束听写</text>
+    </view>
+  </view>
+</view>
+
+
+<view wx:else class="dictation-result">
+  <view class="checkall">
+    <checkbox bindtap="ckickAlltap" checked="{{isAllClicked}}">全选</checkbox>
+  </view>
+
+  <scroll-view class="c3" scroll-y="true">
+    <view class="list" wx:for="{{wordlist}}" wx:for-index="index">
+      <text class="index">{{index+1}}</text>
+      <text class="word">{{item.word}}</text>
+      <text class="result-interpretation">{{item.interpretation}}</text>
+      <image data-id="{{item.id}}" src="../../images/wordinfo.png" />
+      <checkbox data-id="{{item.id}}" checked="{{item.checked}}" bindtap="checkChange"></checkbox>
+    </view>
+  </scroll-view>
+
+
+  <view class="btn">
+    <view class="blockBtn addToWordBook" bindtap="addToWordBook">
+      <text>添加到单词本</text>
+    </view>
+    <view class="blockBtn backIndex" bindtap="backIndex">
+      <text>返回首页</text>
+    </view>
+  </view>
+</view>

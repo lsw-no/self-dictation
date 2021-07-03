@@ -1,0 +1,13 @@
+<view class="showPlans">
+  <view class="planItem" wx:for="{{planList}}">
+    <view class="planName">
+      <text>{{item.planName}}</text>
+    </view>
+    <checkbox data-id="{{item.id}}" checked="{{item.checked}}" bindtap="checkChange"></checkbox>
+  </view>
+</view>
+<view class="btnGroup">
+  <view class="blockBtn addToPlan" bindtap="addToPlan">
+    <text>添加至选择计划</text>
+  </view>
+</view>

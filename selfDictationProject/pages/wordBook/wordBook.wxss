@@ -1,0 +1,73 @@
+.topPart {
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1rpx solid #3fa4fce8;
+  position: absolute;
+  top: 0;
+}
+
+.search {
+  float: right;
+  margin-right: 85rpx;
+  width: 580rpx;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  border: 1rpx solid #4facfe;
+  border-radius: 8rpx;
+}
+
+.search input {
+  width: 530rpx;
+  margin-left: 10rpx;
+  margin-top: 5rpx;
+}
+
+.search image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.showWords {
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.wordItem {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  line-height: 80rpx;
+  margin-bottom: 5rpx;
+  border-bottom:1rpx solid #3fa4fce8;
+  font-size: 35rpx;
+  
+}
+
+.word {
+  width: 155rpx;
+  margin-left: 25rpx;
+  overflow: hidden;
+  font-size: 28rpx;
+}
+
+.interpretation {
+  width: 380rpx;
+  margin: 0 10rpx;
+  overflow: hidden;
+  font-size: 28rpx;
+}
+
+.btn {
+  margin: 0 5rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.btn image{
+  margin-left: 3rpx;
+  width: 80rpx;
+  height: 80rpx;
+}

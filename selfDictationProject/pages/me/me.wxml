@@ -1,0 +1,11 @@
+<view id="myLogin">
+  <block wx:if="{{isLogin}}">
+    <image id="myIcon" src="{{src}}"></image>
+    <text id="nickName">{{nickName}}</text>
+  </block>
+  <button wx:else open-type="getUserInfo" bindgetuserinfo="getMyInfo">未登录，点击登录</button>
+</view>
+
+<view class="func-flex">
+
+</view>

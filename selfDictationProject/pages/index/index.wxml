@@ -1,0 +1,37 @@
+<view class="top">
+  <view class="login">
+    <image src="{{userImage}}" />
+  </view>
+  <view class="search">
+    <input type="text" value="{{searchWord}}" bindinput="searchWord" placeholder="搜索单词" />
+    <image bindtap="search" src="../../images/search.png" />
+  </view>
+</view>
+
+<view class="form">
+  <text>选择听写计划:</text>
+  <view class="show-plans">
+    <picker bindchange="typePickChange" value="{{selectIndex}}" range="{{planList}}" range-key="planName">
+      <view class="pick-item">
+        <view class="select">
+          <input value="{{planList[selectIndex].planName}}" disabled="true" />
+          <image src="../../images/down.png" />
+        </view>
+      </view>
+    </picker>
+    <view class="planBtn">
+      <image bindtap="addPlan" src="../../images/add.png" />
+      <image bindtap="updatePlan" src="../../images/update.png" />
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="page-section-title">选择发音：</view>
+    <radio data-type="E" checked="{{isBritish}}" bindtap="switchSection">英式</radio>
+    <radio data-type="A" checked="{{!isBritish}}" bindtap="switchSection" style="margin-left: 200rpx;">美式</radio>
+  </view>
+
+  <view class="start" bindtap="startDictation">
+    <text>开始听写</text>
+  </view>
+</view>

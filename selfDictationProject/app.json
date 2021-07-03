@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/plan/plan",
+    "pages/word/word",
+    "pages/wordBook/wordBook",
+    "pages/thesaurusList/thesaurusList",
+    "pages/thesaurusDetail/thesaurusDetail",
+    "pages/dictation/dictation",
+    "pages/me/me",
+    "pages/selectPlan/selectPlan"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4facfe",
+    "navigationBarTitleText": "self听写",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#4facfe",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "听写",
+      "iconPath": "images/dictation_noClick.png",
+      "selectedIconPath": "images/dictation.png"
+    },
+    {
+      "pagePath": "pages/wordBook/wordBook",
+      "text": "单词本",
+      "iconPath": "images/wordBook_noClick.png",
+      "selectedIconPath": "images/wordBook.png"
+    },
+    {
+      "pagePath": "pages/thesaurusList/thesaurusList",
+      "text": "词库",
+      "iconPath": "images/thesaurus_noClick.png",
+      "selectedIconPath": "images/thesaurus.png"
+    },
+    {
+      "pagePath": "pages/me/me",
+      "text": "我的",
+      "iconPath": "images/user_noClick.png",
+      "selectedIconPath": "images/user.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

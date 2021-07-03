@@ -1,0 +1,12 @@
+<view class="title">
+  <text>词库列表</text>
+</view>
+
+<view class="list">
+  <view class="item" wx:for="{{list}}" wx:for-item="item">
+    <image bindtap="goToListDetail" data-id="{{item.id}}" data-name="{{item.name}}" src="../../images/book.png" />
+    <view class="listname">
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+</view>

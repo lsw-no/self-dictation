@@ -1,0 +1,35 @@
+<view class="cover">
+  <view class="info">
+    <view>
+      <image src="../../images/book.png" />
+    </view>
+    <view class="wordName">
+      <text>{{name}}</text>
+      <!-- <text style="margin-top: 20rpx;font-size: 25rpx;">单词数：{{num}}</text> -->
+    </view>
+  </view>
+</view>
+
+<!-- <view class="checkall">
+  <checkbox bindtap="ckickAlltap" checked="{{isAllClicked}}">全选</checkbox>
+</view> -->
+
+<view class="wordList">
+  <scroll-view scroll-y="true" bindscrolltolower="loadMore">
+    <view class="list" wx:for="{{list}}">
+      <text class="word">{{item.word}}</text>
+      <text class="interpretation">{{item.interpretation}}</text>
+      <image data-id="{{item.id}}" bindtap="goToWordInfo" src="../../images/wordinfo.png" />
+      <checkbox data-id="{{item.id}}" checked="{{item.checked}}" bindtap="checkChange"></checkbox>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="btn">
+  <view class="blockBtn addToWordBook" bindtap="addToWordBook">
+    <text>添加到单词本</text>
+  </view>
+  <view class="blockBtn addToPlan" bindtap="addToPlan">
+    <text>添加到听写计划</text>
+  </view>
+</view>

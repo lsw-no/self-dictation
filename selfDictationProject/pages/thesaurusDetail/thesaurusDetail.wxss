@@ -1,0 +1,111 @@
+.info {
+  width: 100%;
+  height: 250rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #4facfe;
+}
+
+.info image {
+  margin: 15rpx 15rpx;
+  width: 175rpx;
+  height: 220rpx;
+}
+
+.wordName {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+  margin-top: 10rpx;
+  font-size: 50rpx;
+}
+
+
+.checkall {
+  margin-top: 20rpx;
+  position: fixed;
+  right: 5%;
+  /* border-bottom: 1rpx solid #4facfe; */
+}
+
+.wordList {
+  /* margin-top: 80rpx; */
+  height: 840rpx;
+  /* overflow: hidden; */
+}
+
+scroll-view {
+  height: 840rpx;
+}
+
+.list {
+  width: 100%;
+  height: 80rpx;
+  text-align: center;
+  align-content: center;
+  line-height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #4facfe;
+  font-size: 35rpx;
+}
+
+.list image {
+  margin-left: 3rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.word {
+  text-align: left;
+  width: 155rpx;
+  margin-left: 25rpx;
+  overflow: hidden;
+}
+
+.interpretation {
+  width: 380rpx;
+  text-align: left;
+  /* align-content: center; */
+  font-size: 15px;
+  padding: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  border-top: 1rpx solid #4facfe;
+}
+
+.btn text {
+  margin-top: 10rpx;
+}
+
+.addToWordBook {
+  top: 35rpx;
+  left: 355rpx;
+  width: 160rpx;
+  height: 70rpx;
+}
+
+.addToPlan {
+  top: 35rpx;
+  left: 380rpx;
+  width: 190rpx;
+  height: 70rpx;
+
+}
+
+.blockBtn {
+  position: relative;
+  float: left;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 25rpx;
+  color: white;
+  background-color: #4facfe;
+  border-radius: 10rpx;
+}

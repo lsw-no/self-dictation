@@ -1,0 +1,144 @@
+/* pages/plan/plan.wxss */
+.container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.c1{
+  height: 35%;
+  display: flex;
+  flex-direction: row;
+  background-color:#4facfe;
+  align-items: center;
+}
+.left{
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.input{
+  padding: 3px;
+  border: 3rpx solid #888785;
+  border-radius: 10rpx;
+  box-shadow: 0 0 20rpx rgba(0.15, 0.15,0.15, 0.15);
+  font-size: 15px;
+  background-color: white;
+}
+.num{
+  padding-top: 40px;
+  align-items: center;
+  font-family: 黑体;
+  font-size: 28px;
+  color: rgb(66, 66, 66);
+}
+.right{
+  width: 45%;
+  padding: 15px;
+}
+.textarea{
+  width: 95%;
+  padding: 3px;
+  border: 3rpx solid #888785;
+  border-radius: 10rpx;
+  box-shadow: 0 0 20rpx rgba(0.15, 0.15,0.15, 0.15);
+  font-size: 15px;
+  background-color: white;
+}
+.c2{
+  padding: 10PX;
+  width: 90%;
+  height: 25px;
+  flex-direction: row;
+  border-bottom: 1rpx solid #4facfe;
+}
+.checkall{
+  position: fixed;
+  right: 5%;
+}
+
+.c3{
+  width: 100%;
+  height: 363px;
+}
+
+.list{
+  /* text-align: center;
+  align-content: center; */
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #4facfe;
+  line-height: 81rpx;
+}
+
+.list image{
+  margin-left: 3rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.word{
+  width: 155rpx;
+  margin-left: 25rpx;
+  overflow: hidden;
+}
+.content{
+  width: 380rpx;
+  align-content: center;
+  font-size: 15px;
+  padding: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btn{
+  position: absolute;
+  bottom: 55rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-top: 1rpx solid #4facfe;
+  /* margin-top: 130rpx; */
+  
+}
+
+.btn text{
+  margin-top: 10rpx;
+}
+
+.deletePlan {
+  top: 35rpx;
+  left: 200rpx;
+  width: 160rpx;
+  height: 70rpx;
+
+}
+
+.deleteWord {
+  top: 35rpx;
+  left: 215rpx;
+  width: 150rpx;
+  height: 70rpx;
+}
+
+
+
+.save {
+  top: 35rpx;
+  left: 230rpx;
+  width: 140rpx;
+  height: 70rpx;
+
+}
+
+.blockBtn {
+  position: relative;
+  float: left;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 25rpx;
+  color: white;
+  background-color: #4facfe;
+  border-radius: 10rpx;
+}

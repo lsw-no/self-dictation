@@ -1,0 +1,50 @@
+.showPlans{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.planItem{
+  width: 95%;
+  height: 70rpx;
+  line-height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  margin: 2% 2%;
+  border-bottom: 1rpx solid #4facfe;
+  /* border-right: 1rpx solid #4facfe; */
+}
+
+
+.planName{
+  margin: 1% 5%;
+  width: 80%;
+}
+
+
+.btnGroup{
+  position: absolute;
+  bottom: 55rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-top: 1rpx solid #4facfe;
+}
+
+.addToPlan{
+  top: 35rpx;
+  left: 500rpx;
+  width: 230rpx;
+  height: 70rpx;
+}
+
+.blockBtn {
+  position: relative;
+  float: left;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 25rpx;
+  color: white;
+  background-color: #4facfe;
+  border-radius: 10rpx;
+}

@@ -1,0 +1,117 @@
+radio .wx-radio-input.wx-radio-input-checked{
+  border: none;
+  background: #4facfe;
+}
+
+.top{
+  display: flex;
+  flex-direction: row;
+}
+
+.login{
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+}
+
+.imageBtn[plain]{
+  padding: 0;
+  border:none;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.login image{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+}
+
+.loginBtn{
+  display: block;
+  size: 2vh;
+  width: 40rpx;
+}
+
+.search{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  border: 1rpx solid #4facfe;
+  border-radius: 5rpx;
+}
+
+.search input{
+  width: 530rpx;
+  margin-left: 10rpx;
+  margin-top: 5rpx;
+}
+
+.search image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.form{
+  margin-top: 160rpx;
+  margin-left: 160rpx;
+}
+
+.show-plans{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.pick-item{
+  text-align: left;
+  /* margin-right: 170rpx; */
+  display: flex;
+  flex-direction: row;
+}
+.select{
+  display: flex;
+  flex-direction: row;
+  border: 1rpx solid #4facfe;
+  border-radius: 5rpx;
+}
+.select input{
+  width: 310rpx;
+}
+
+.pick-item image{
+  margin-top: 7rpx;
+  width: 42rpx;
+  height: 28rpx;
+  float: right;
+}
+
+.planBtn{
+  margin-left: 10rpx;
+}
+
+.planBtn image{
+  margin-top: 7rpx;
+  width: 45rpx;
+  height: 45rpx;
+  margin: 0rpx 10rpx;
+  border: 1rpx solid #4facfe;
+}
+
+.section{
+  margin-top: 160rpx;
+}
+
+.start{
+  width: 400rpx;
+  height: 130rpx;
+  border: 1rpx solid #4facfe;
+  border-radius: 40rpx;
+  margin-top: 160rpx;
+  background-color: #4facfe;
+  line-height: 130rpx;
+  text-align: center;
+  margin-left: 10rpx;
+  color: white;
+  font-size: 45rpx;
+}

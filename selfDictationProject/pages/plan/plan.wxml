@@ -1,0 +1,36 @@
+<!--pages/plan/plan.wxml-->
+<view class="container">
+  <view class="c1">
+    <view class="left">
+      <input class="input" bindinput="planNameChange" value="{{planName}}" placeholder="请输入计划名称"></input>
+      <text class="num">单词数：{{wordNum}}</text>
+    </view>
+    <!-- <view class="right">
+      <textarea class="textarea" placeholder="请输入计划简介"></textarea>
+    </view> -->
+  </view>
+  <view wx:if="{{hasSave}}" class="c2">
+    <view class="checkall">
+      <checkbox bindtap="ckickAlltap" checked="{{isAllClicked}}">全选</checkbox>
+    </view>
+  </view>
+  <scroll-view class="c3" scroll-y="true">
+      <view class="list" wx:for="{{list}}" wx:key>
+        <text class="word">{{item.word}}</text>
+        <text class="content">{{item.interpretation}}</text>
+        <image data-id="{{item.id}}" bindtap="goToWordInfo" src="../../images/wordinfo.png" />
+        <checkbox data-id="{{item.id}}" bindtap="checkChange" checked="{{item.checked}}"></checkbox>
+      </view>
+  </scroll-view>
+  <view class="btn">
+    <view bindtap="deletePlan" class="blockBtn deletePlan">
+      <text>删除计划</text>
+    </view>
+    <view bindtap="removeWords" class="blockBtn deleteWord">
+      <text>移除单词</text>
+    </view>
+    <view bindtap="savePlan" class="blockBtn save">
+      <text>保存</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+spring:
+  profiles:
+    #启动配置文件后缀名
+    active: mybatis

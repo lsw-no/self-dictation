@@ -1,0 +1,35 @@
+<view class="word">
+<text>{{word}}</text>
+</view>
+
+<view class="voice">
+  <view class="voiceBtn">
+    <text>英式发音：</text>
+    <image bindtap="playAudio" data-type="1" src="../../images/voice.png" />
+  </view>
+  <view class="voiceBtn">
+    <view>
+      <text>美式发音：</text>
+    </view>
+    
+    <view>
+      <image bindtap="playAudio" data-type="2" src="../../images/voice.png" />
+    </view>
+    
+  </view>
+</view>
+
+<view class="interpretation">
+  <textarea value="{{interpretation}}" disabled="true" auto-height>
+
+  </textarea>
+</view>
+
+<view class="btn">
+  <view class="blockBtn addToWordBook">
+    <text>添加到单词本</text>
+  </view>
+  <!-- <view class="blockBtn addToPlan">
+    <text>添加到听写计划</text>
+  </view> -->
+</view>

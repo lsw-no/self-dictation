@@ -1,0 +1,21 @@
+<!-- <view class="topPart">
+  <view class="search">
+    <input type="text" placeholder="搜索单词" />
+    <image src="../../images/search.png" />
+  </view>
+</view> -->
+
+<view class="showWords">
+  <view class="wordItem" wx:for="{{wordlist}}" wx:for-item="wordInfo">
+    <view class="word">
+      <text>{{wordInfo.word}}</text>
+    </view>
+    <view class="interpretation">
+      {{wordInfo.interpretation}}
+    </view>
+    <view class="btn">
+      <image data-id="{{wordInfo.id}}" bindtap="goToWordInfo" src="../../images/wordinfo.png" />
+      <image data-id="{{wordInfo.id}}" bindtap="deleteWord" src="../../images/delete.png" />
+    </view>
+  </view>
+</view>
